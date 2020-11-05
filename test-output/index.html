@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\Yasharth\eclipse-workspace\EmiCalculator\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">21 methods, 1 failed,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.LoanCalculatorTest" hash-for-method="loanCalculator(1000000.0, 9.5, 6.0, -2.0, 13,15,780)">loanCalculator(1000000.0, 9.5, 6.0, -2.0, 13,15,780)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.CarLoanTest" hash-for-method="carEmiCalculator(3000000.0, 10.5, Y, 20.0, 71,88,335)">carEmiCalculator(3000000.0, 10.5, Y, 20.0, 71,88,335)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.CarLoanTest" hash-for-method="carEmiCalculator(1200000.0, 15.0, M, 0.0, 12,99,720)">carEmiCalculator(1200000.0, 15.0, M, 0.0, 12,99,720)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.CarLoanTest" hash-for-method="carEmiCalculator(1000000.0, 4.0, Y, 10.0, 12,14,942)">carEmiCalculator(1000000.0, 4.0, Y, 10.0, 12,14,942)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.CarLoanTest" hash-for-method="carEmiCalculator(1250000.0, 12.0, Y, 60.0, 90,06,969)">carEmiCalculator(1250000.0, 12.0, Y, 60.0, 90,06,969)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.CarLoanTest" hash-for-method="carEmiCalculator(1300000.0, 12.0, Y, 1.0, 13,86,041)">carEmiCalculator(1300000.0, 12.0, Y, 1.0, 13,86,041)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.CarLoanTest" hash-for-method="carEmiCalculator(1500000.0, 9.5, Y, 2.0, 1652922.0)">carEmiCalculator(1500000.0, 9.5, Y, 2.0, 1652922.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.CarLoanTest" hash-for-method="carEmiCalculator(1000000.0, 0.0, Y, 10.0, 12,72,786)">carEmiCalculator(1000000.0, 0.0, Y, 10.0, 12,72,786)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.CarLoanTest" hash-for-method="carEmiCalculator(1300000.0, 14.0, M, 50.0, 1,09,22,579)">carEmiCalculator(1300000.0, 14.0, M, 50.0, 1,09,22,579)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.HomeLoanEmiTest" hash-for-method="homeLoanEmiCalculator(0.0, 0.0, 0.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 2500.0)">homeLoanEmiCalculator(0.0, 0.0, 0.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 2500.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.HomeLoanEmiTest" hash-for-method="homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, -2.0, 0.25, 0.05, 2500.0, 854358.0)">homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, -2.0, 0.25, 0.05, 2500.0, 854358.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.HomeLoanEmiTest" hash-for-method="homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, 10.0, 0.25, 0.05, -2.0, 262838.0)">homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, 10.0, 0.25, 0.05, -2.0, 262838.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.HomeLoanEmiTest" hash-for-method="homeLoanEmiCalculator(100000.0, 0.0, -2.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 839966.0)">homeLoanEmiCalculator(100000.0, 0.0, -2.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 839966.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.HomeLoanEmiTest" hash-for-method="homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 0.0, 10.0, 0.25, 0.05, 2500.0, 1252253.0)">homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 0.0, 10.0, 0.25, 0.05, 2500.0, 1252253.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.HomeLoanEmiTest" hash-for-method="homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, -2.0, 10.0, 0.25, 0.05, 2500.0, 192089.0)">homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, -2.0, 10.0, 0.25, 0.05, 2500.0, 192089.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.HomeLoanEmiTest" hash-for-method="homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, 10.0, -2.0, 0.05, 2500.0, 897358.0)">homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, 10.0, -2.0, 0.05, 2500.0, 897358.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.HomeLoanEmiTest" hash-for-method="homeLoanEmiCalculator(100000.0, -2.0, 0.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 837482.0)">homeLoanEmiCalculator(100000.0, -2.0, 0.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 837482.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.HomeLoanEmiTest" hash-for-method="homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, 10.0, 0.25, -2.0, 2500.0, 901358.0)">homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, 10.0, 0.25, -2.0, 2500.0, 901358.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.HomeLoanEmiTest" hash-for-method="homeLoanEmiCalculator(-2.0, 0.0, 0.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 600005.0)">homeLoanEmiCalculator(-2.0, 0.0, 0.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 600005.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.LoanCalculatorTest" hash-for-method="loanCalculator(1000000.0, 9.5, 6.0, 0.0, 13,15,778)">loanCalculator(1000000.0, 9.5, 6.0, 0.0, 13,15,778)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testCases.LoanCalculatorTest" hash-for-method="loanCalculator(-200000.0, 9.5, 6.0, 0.0, 2,63,156)">loanCalculator(-200000.0, 9.5, 6.0, 0.0, 2,63,156)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.LoanCalculatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loanCalculator(1000000.0, 9.5, 6.0, -2.0, 13,15,780)">
+                  </a> <!-- loanCalculator(1000000.0, 9.5, 6.0, -2.0, 13,15,780) -->
+                  <span class="method-name">loanCalculator</span>
+                  <span class="parameters">(1000000.0, 9.5, 6.0, -2.0, 13,15,780)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;loanfees&apos;]&quot;}
+  (Session info: chrome=86.0.4240.111)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-QB0KDE3&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\Yasharth\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57117}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 69c5d112da5f0876736d93ec820c349a
+*** Element info: {Using=xpath, value=//*[@id=&apos;loanfees&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
+	at baseClasses.PageBaseClass.clearField(PageBaseClass.java:44)
+	at pageClasses.LoanCalculatorPage.calculateLoan(LoanCalculatorPage.java:51)
+	at testCases.LoanCalculatorTest.loanCalculator(LoanCalculatorTest.java:34)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.HomeLoanEmiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="homeLoanEmiCalculator(0.0, 0.0, 0.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 2500.0)">
+                  </a> <!-- homeLoanEmiCalculator(0.0, 0.0, 0.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 2500.0) -->
+                  <span class="method-name">homeLoanEmiCalculator</span>
+                  <span class="parameters">(0.0, 0.0, 0.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 2500.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, -2.0, 0.25, 0.05, 2500.0, 854358.0)">
+                  </a> <!-- homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, -2.0, 0.25, 0.05, 2500.0, 854358.0) -->
+                  <span class="method-name">homeLoanEmiCalculator</span>
+                  <span class="parameters">(100000.0, 0.0, 10000.0, 9.5, 20.0, -2.0, 0.25, 0.05, 2500.0, 854358.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, 10.0, 0.25, 0.05, -2.0, 262838.0)">
+                  </a> <!-- homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, 10.0, 0.25, 0.05, -2.0, 262838.0) -->
+                  <span class="method-name">homeLoanEmiCalculator</span>
+                  <span class="parameters">(100000.0, 0.0, 10000.0, 9.5, 20.0, 10.0, 0.25, 0.05, -2.0, 262838.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homeLoanEmiCalculator(100000.0, 0.0, -2.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 839966.0)">
+                  </a> <!-- homeLoanEmiCalculator(100000.0, 0.0, -2.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 839966.0) -->
+                  <span class="method-name">homeLoanEmiCalculator</span>
+                  <span class="parameters">(100000.0, 0.0, -2.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 839966.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 0.0, 10.0, 0.25, 0.05, 2500.0, 1252253.0)">
+                  </a> <!-- homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 0.0, 10.0, 0.25, 0.05, 2500.0, 1252253.0) -->
+                  <span class="method-name">homeLoanEmiCalculator</span>
+                  <span class="parameters">(100000.0, 0.0, 10000.0, 9.5, 0.0, 10.0, 0.25, 0.05, 2500.0, 1252253.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, -2.0, 10.0, 0.25, 0.05, 2500.0, 192089.0)">
+                  </a> <!-- homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, -2.0, 10.0, 0.25, 0.05, 2500.0, 192089.0) -->
+                  <span class="method-name">homeLoanEmiCalculator</span>
+                  <span class="parameters">(100000.0, 0.0, 10000.0, 9.5, -2.0, 10.0, 0.25, 0.05, 2500.0, 192089.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, 10.0, -2.0, 0.05, 2500.0, 897358.0)">
+                  </a> <!-- homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, 10.0, -2.0, 0.05, 2500.0, 897358.0) -->
+                  <span class="method-name">homeLoanEmiCalculator</span>
+                  <span class="parameters">(100000.0, 0.0, 10000.0, 9.5, 20.0, 10.0, -2.0, 0.05, 2500.0, 897358.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homeLoanEmiCalculator(100000.0, -2.0, 0.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 837482.0)">
+                  </a> <!-- homeLoanEmiCalculator(100000.0, -2.0, 0.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 837482.0) -->
+                  <span class="method-name">homeLoanEmiCalculator</span>
+                  <span class="parameters">(100000.0, -2.0, 0.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 837482.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, 10.0, 0.25, -2.0, 2500.0, 901358.0)">
+                  </a> <!-- homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, 10.0, 0.25, -2.0, 2500.0, 901358.0) -->
+                  <span class="method-name">homeLoanEmiCalculator</span>
+                  <span class="parameters">(100000.0, 0.0, 10000.0, 9.5, 20.0, 10.0, 0.25, -2.0, 2500.0, 901358.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homeLoanEmiCalculator(-2.0, 0.0, 0.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 600005.0)">
+                  </a> <!-- homeLoanEmiCalculator(-2.0, 0.0, 0.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 600005.0) -->
+                  <span class="method-name">homeLoanEmiCalculator</span>
+                  <span class="parameters">(-2.0, 0.0, 0.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 600005.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.LoanCalculatorTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loanCalculator(1000000.0, 9.5, 6.0, 0.0, 13,15,778)">
+                  </a> <!-- loanCalculator(1000000.0, 9.5, 6.0, 0.0, 13,15,778) -->
+                  <span class="method-name">loanCalculator</span>
+                  <span class="parameters">(1000000.0, 9.5, 6.0, 0.0, 13,15,778)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loanCalculator(-200000.0, 9.5, 6.0, 0.0, 2,63,156)">
+                  </a> <!-- loanCalculator(-200000.0, 9.5, 6.0, 0.0, 2,63,156) -->
+                  <span class="method-name">loanCalculator</span>
+                  <span class="parameters">(-200000.0, 9.5, 6.0, 0.0, 2,63,156)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.CarLoanTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="carEmiCalculator(3000000.0, 10.5, Y, 20.0, 71,88,335)">
+                  </a> <!-- carEmiCalculator(3000000.0, 10.5, Y, 20.0, 71,88,335) -->
+                  <span class="method-name">carEmiCalculator</span>
+                  <span class="parameters">(3000000.0, 10.5, Y, 20.0, 71,88,335)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="carEmiCalculator(1200000.0, 15.0, M, 0.0, 12,99,720)">
+                  </a> <!-- carEmiCalculator(1200000.0, 15.0, M, 0.0, 12,99,720) -->
+                  <span class="method-name">carEmiCalculator</span>
+                  <span class="parameters">(1200000.0, 15.0, M, 0.0, 12,99,720)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="carEmiCalculator(1000000.0, 4.0, Y, 10.0, 12,14,942)">
+                  </a> <!-- carEmiCalculator(1000000.0, 4.0, Y, 10.0, 12,14,942) -->
+                  <span class="method-name">carEmiCalculator</span>
+                  <span class="parameters">(1000000.0, 4.0, Y, 10.0, 12,14,942)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="carEmiCalculator(1250000.0, 12.0, Y, 60.0, 90,06,969)">
+                  </a> <!-- carEmiCalculator(1250000.0, 12.0, Y, 60.0, 90,06,969) -->
+                  <span class="method-name">carEmiCalculator</span>
+                  <span class="parameters">(1250000.0, 12.0, Y, 60.0, 90,06,969)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="carEmiCalculator(1300000.0, 12.0, Y, 1.0, 13,86,041)">
+                  </a> <!-- carEmiCalculator(1300000.0, 12.0, Y, 1.0, 13,86,041) -->
+                  <span class="method-name">carEmiCalculator</span>
+                  <span class="parameters">(1300000.0, 12.0, Y, 1.0, 13,86,041)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="carEmiCalculator(1500000.0, 9.5, Y, 2.0, 1652922.0)">
+                  </a> <!-- carEmiCalculator(1500000.0, 9.5, Y, 2.0, 1652922.0) -->
+                  <span class="method-name">carEmiCalculator</span>
+                  <span class="parameters">(1500000.0, 9.5, Y, 2.0, 1652922.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="carEmiCalculator(1000000.0, 0.0, Y, 10.0, 12,72,786)">
+                  </a> <!-- carEmiCalculator(1000000.0, 0.0, Y, 10.0, 12,72,786) -->
+                  <span class="method-name">carEmiCalculator</span>
+                  <span class="parameters">(1000000.0, 0.0, Y, 10.0, 12,72,786)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="carEmiCalculator(1300000.0, 14.0, M, 50.0, 1,09,22,579)">
+                  </a> <!-- carEmiCalculator(1300000.0, 14.0, M, 50.0, 1,09,22,579) -->
+                  <span class="method-name">carEmiCalculator</span>
+                  <span class="parameters">(1300000.0, 14.0, M, 50.0, 1,09,22,579)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Yasharth\eclipse-workspace\EmiCalculator\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.CarLoanTest&quot;/&gt;
+      &lt;class name=&quot;testCases.HomeLoanEmiTest&quot;/&gt;
+      &lt;class name=&quot;testCases.LoanCalculatorTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(21);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'homeLoanEmiCalculator')
+data.setCell(0, 2, 'testCases.HomeLoanEmiTest')
+data.setCell(0, 3, 102096);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loanCalculator')
+data.setCell(1, 2, 'testCases.LoanCalculatorTest')
+data.setCell(1, 3, 80708);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loanCalculator')
+data.setCell(2, 2, 'testCases.LoanCalculatorTest')
+data.setCell(2, 3, 53360);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'carEmiCalculator')
+data.setCell(3, 2, 'testCases.CarLoanTest')
+data.setCell(3, 3, 52909);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'carEmiCalculator')
+data.setCell(4, 2, 'testCases.CarLoanTest')
+data.setCell(4, 3, 49525);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'homeLoanEmiCalculator')
+data.setCell(5, 2, 'testCases.HomeLoanEmiTest')
+data.setCell(5, 3, 46323);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'carEmiCalculator')
+data.setCell(6, 2, 'testCases.CarLoanTest')
+data.setCell(6, 3, 43389);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'carEmiCalculator')
+data.setCell(7, 2, 'testCases.CarLoanTest')
+data.setCell(7, 3, 41867);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'loanCalculator')
+data.setCell(8, 2, 'testCases.LoanCalculatorTest')
+data.setCell(8, 3, 41110);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'homeLoanEmiCalculator')
+data.setCell(9, 2, 'testCases.HomeLoanEmiTest')
+data.setCell(9, 3, 38492);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'homeLoanEmiCalculator')
+data.setCell(10, 2, 'testCases.HomeLoanEmiTest')
+data.setCell(10, 3, 37064);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'homeLoanEmiCalculator')
+data.setCell(11, 2, 'testCases.HomeLoanEmiTest')
+data.setCell(11, 3, 35582);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'carEmiCalculator')
+data.setCell(12, 2, 'testCases.CarLoanTest')
+data.setCell(12, 3, 33797);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'homeLoanEmiCalculator')
+data.setCell(13, 2, 'testCases.HomeLoanEmiTest')
+data.setCell(13, 3, 32860);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'homeLoanEmiCalculator')
+data.setCell(14, 2, 'testCases.HomeLoanEmiTest')
+data.setCell(14, 3, 32796);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'homeLoanEmiCalculator')
+data.setCell(15, 2, 'testCases.HomeLoanEmiTest')
+data.setCell(15, 3, 30566);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'carEmiCalculator')
+data.setCell(16, 2, 'testCases.CarLoanTest')
+data.setCell(16, 3, 30067);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'homeLoanEmiCalculator')
+data.setCell(17, 2, 'testCases.HomeLoanEmiTest')
+data.setCell(17, 3, 29528);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'carEmiCalculator')
+data.setCell(18, 2, 'testCases.CarLoanTest')
+data.setCell(18, 3, 29060);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'carEmiCalculator')
+data.setCell(19, 2, 'testCases.CarLoanTest')
+data.setCell(19, 3, 26904);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'homeLoanEmiCalculator')
+data.setCell(20, 2, 'testCases.HomeLoanEmiTest')
+data.setCell(20, 3, 20990);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 14 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.CarLoanTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">carEmiCalculator(1500000.0, 9.5, Y, 2.0, 1652922.0)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">carEmiCalculator(3000000.0, 10.5, Y, 20.0, 71,88,335)</span>
+                <span class="method-start">26912 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">carEmiCalculator(1000000.0, 4.0, Y, 10.0, 12,14,942)</span>
+                <span class="method-start">60709 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">carEmiCalculator(1000000.0, 0.0, Y, 10.0, 12,72,786)</span>
+                <span class="method-start">104098 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">carEmiCalculator(1200000.0, 15.0, M, 0.0, 12,99,720)</span>
+                <span class="method-start">133158 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">carEmiCalculator(1300000.0, 14.0, M, 50.0, 1,09,22,579)</span>
+                <span class="method-start">175025 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">carEmiCalculator(1300000.0, 12.0, Y, 1.0, 13,86,041)</span>
+                <span class="method-start">224555 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">carEmiCalculator(1250000.0, 12.0, Y, 60.0, 90,06,969)</span>
+                <span class="method-start">254622 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.HomeLoanEmiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">homeLoanEmiCalculator(0.0, 0.0, 0.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 2500.0)</span>
+                <span class="method-start">307619 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">homeLoanEmiCalculator(-2.0, 0.0, 0.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 600005.0)</span>
+                <span class="method-start">409715 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">homeLoanEmiCalculator(100000.0, -2.0, 0.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 837482.0)</span>
+                <span class="method-start">456038 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">homeLoanEmiCalculator(100000.0, 0.0, -2.0, 9.5, 20.0, 10.0, 0.25, 0.05, 2500.0, 839966.0)</span>
+                <span class="method-start">486604 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, -2.0, 10.0, 0.25, 0.05, 2500.0, 192089.0)</span>
+                <span class="method-start">516132 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 0.0, 10.0, 0.25, 0.05, 2500.0, 1252253.0)</span>
+                <span class="method-start">537122 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, -2.0, 0.25, 0.05, 2500.0, 854358.0)</span>
+                <span class="method-start">574186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, 10.0, -2.0, 0.05, 2500.0, 897358.0)</span>
+                <span class="method-start">607046 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, 10.0, 0.25, -2.0, 2500.0, 901358.0)</span>
+                <span class="method-start">642628 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">homeLoanEmiCalculator(100000.0, 0.0, 10000.0, 9.5, 20.0, 10.0, 0.25, 0.05, -2.0, 262838.0)</span>
+                <span class="method-start">675424 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.LoanCalculatorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loanCalculator(1000000.0, 9.5, 6.0, 0.0, 13,15,778)</span>
+                <span class="method-start">713988 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loanCalculator(1000000.0, 9.5, 6.0, -2.0, 13,15,780)</span>
+                <span class="method-start">755098 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loanCalculator(-200000.0, 9.5, 6.0, 0.0, 2,63,156)</span>
+                <span class="method-start">835878 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
